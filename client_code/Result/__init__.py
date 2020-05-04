@@ -7,7 +7,4 @@ from anvil.tables import app_tables
 
 class Result(ResultTemplate):
   def __init__(self, **properties):
-    self.label_1.text = "Hello"
     self.init_components(**properties)
-
-    # Any code you write here will run when the form opens.
