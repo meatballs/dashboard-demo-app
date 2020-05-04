@@ -7,11 +7,7 @@ components:
   properties: {col_widths: '{}'}
   name: content_panel
   layout_properties: {slot: default}
-  components:
-  - type: ColumnPanel
-    properties: {role: card}
-    name: card_1
-    layout_properties: {grid_position: 'EVIPDU,MYAFXC'}
+  components: []
 - type: FlowPanel
   properties: {}
   name: navbar_links

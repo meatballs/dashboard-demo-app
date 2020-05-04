@@ -1,13 +1,13 @@
-from ._anvil_designer import ResultTemplate
+from ._anvil_designer import Form1Template
 from anvil import *
 import anvil.server
 import anvil.tables as tables
 import anvil.tables.query as q
 from anvil.tables import app_tables
 
-class Result(ResultTemplate):
+class Form1(Form1Template):
   def __init__(self, **properties):
-    self.label_1.text = "Hello"
+    # Set Form properties and Data Bindings.
     self.init_components(**properties)
 
     # Any code you write here will run when the form opens.
