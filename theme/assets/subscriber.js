@@ -4,11 +4,12 @@ var connection = new autobahn.Connection({
 );
 
 connection.onopen = function (session) {
+	var form = this;
 
    function onResult(args) {
    	  // No idea why this doesn't work but I hate js and life is too short to spend
       // any more time on it.
-      anvil.call(this, "refresh_download_speed", args[0]['download']).then(function() {});
+      anvil.call(form, "refresh_download_speed", args[0]['download']);
       document.getElementById('speed').innerHTML = args[0]['download'];
    }
 
