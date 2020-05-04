@@ -7,7 +7,7 @@ connection.onopen = function (session) {
 
    function onResult(args) {
       console.log("Got event:", args[0]);
-      document.getElementById('test').innerHTML = args[0]['download'];
+      anvil.call(this, refresh_download_speed, args[0]['download'])
    }
 
    session.subscribe('results', onResult);
