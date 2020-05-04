@@ -10,7 +10,6 @@ components:
   properties: {}
   name: label_1
   layout_properties: {slot: default}
-  data_bindings:
-  - {property: text, code: 'self.item[''speed'']'}
+  data_bindings: []
 is_package: true
 custom_component: true
