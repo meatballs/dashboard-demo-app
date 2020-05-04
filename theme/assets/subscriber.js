@@ -6,8 +6,7 @@ var connection = new autobahn.Connection({
 connection.onopen = function (session) {
 
    function onResult(args) {
-      console.log("Got event:", args[0]);
-      anvil.call(this, refresh_download_speed, args[0]['download']);
+      anvil.call(this, "refresh_download_speed", args[0]['download']);
    }
 
    session.subscribe('results', onResult);

@@ -11,6 +11,4 @@ class Subscriber(SubscriberTemplate):
     self.init_components(**properties)
 
   def refresh_download_speed(self, speed):
-    print(speed)
     self.item["speed"] = speed
-    self.refresh_data_bindings()
