@@ -1,10 +1,11 @@
+var form = this;
+
 var connection = new autobahn.Connection({
    url: 'ws://127.0.0.1:8080/ws',
    realm: 'speedtest'}
 );
 
 connection.onopen = function (session) {
-   var form = this;
 
    function onResult(args) {
       console.log(this)
