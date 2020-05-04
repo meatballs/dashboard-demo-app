@@ -5,6 +5,12 @@ container:
 
       <p id=speed>Waiting...</p>'}
   event_bindings: {}
-components: []
+components:
+- type: Label
+  properties: {}
+  name: label_1
+  layout_properties: {slot: default}
+  data_bindings:
+  - {property: text, code: 'self.item[''speed'']'}
 is_package: true
 custom_component: true
