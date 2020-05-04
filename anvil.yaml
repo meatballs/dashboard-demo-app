@@ -1,8 +1,17 @@
 allow_embedding: false
 package_name: Speedtest_Demo
-db_schema: []
+db_schema:
+- name: speedtest
+  id: 53152
+  python_name: speedtest
+  columns: {}
+  access: {python_name: speedtest, app_id: Y5TJXJVRJSOX55EH, server: full, client: none,
+    table_id: 53152}
 name: Speedtest Demo
 startup_form: Form1
 renamed: true
 runtime_options: {version: 2, client_version: '3', server_version: python3-sandbox}
-services: []
+services:
+- source: /runtime/services/tables.yml
+  client_config: {}
+  server_config: {auto_create_missing_columns: false}
