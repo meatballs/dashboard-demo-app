@@ -11,7 +11,7 @@ class Subscriber(SubscriberTemplate):
     self.init_components(**properties)
 
   def refresh_download_speed(self, speed):
-    self.label_1.text = speed
+    self.label_1.text = f"{speed:.0f}"
 
   def form_show(self, **event_args):
     self.call_js("set_form")

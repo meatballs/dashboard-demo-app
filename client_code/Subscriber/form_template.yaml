@@ -1,12 +1,14 @@
 container:
   type: HtmlTemplate
   properties: {tooltip: '', background: '', foreground: '', border: '', visible: true,
-    role: null, html: "<script src=\"_/theme/subscriber.js\"></script>    \n<p id=speed>Waiting\
-      \ for first test result ...</p>"}
+    role: null, html: <script src="_/theme/subscriber.js"></script>}
   event_bindings: {show: form_show}
 components:
 - type: Label
-  properties: {}
+  properties: {role: null, align: left, tooltip: '', border: '', foreground: '', visible: true,
+    text: Waiting for first test ..., font_size: null, font: '', spacing_above: small,
+    icon_align: left, spacing_below: small, italic: false, background: '', bold: false,
+    underline: false, icon: ''}
   name: label_1
   layout_properties: {slot: default}
   data_bindings: []
