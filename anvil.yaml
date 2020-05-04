@@ -13,7 +13,39 @@ db_schema:
 - name: speedtest
   id: 53183
   python_name: speedtest
-  columns: {}
+  columns:
+    +Z3_4cBy9iE=:
+      name: bytes_received
+      type: number
+      admin_ui: {order: 6, width: 200}
+    3w2+kL9sl+w=:
+      name: download
+      type: number
+      admin_ui: {order: 0, width: 200}
+    4jOr_IuqlM8=:
+      name: upload
+      type: number
+      admin_ui: {order: 1, width: 200}
+    5EXUvUfZxJU=:
+      name: ping
+      type: number
+      admin_ui: {order: 2, width: 200}
+    6qzfpRScZnA=:
+      name: timestamp
+      type: string
+      admin_ui: {order: 4, width: 200}
+    HS3USVNXBzA=:
+      name: bytes_sent
+      type: number
+      admin_ui: {order: 5, width: 200}
+    UEo6rLq8YwY=:
+      name: server
+      type: simpleObject
+      admin_ui: {order: 3, width: 200}
+    thsAFWIGPwE=:
+      name: client
+      type: simpleObject
+      admin_ui: {order: 7, width: 200}
   access: {python_name: speedtest, app_id: Y5TJXJVRJSOX55EH, server: full, client: none,
     table_id: 53183}
 renamed: true
