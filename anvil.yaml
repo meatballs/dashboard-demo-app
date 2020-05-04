@@ -1,4 +1,7 @@
-services: []
+services:
+- source: /runtime/services/tables.yml
+  client_config: {}
+  server_config: {auto_create_missing_columns: true}
 package_name: Speedtest_Demo
 allow_embedding: false
 name: Speedtest Demo
@@ -6,5 +9,11 @@ runtime_options: {version: 2, client_version: '3', server_version: python3-sandb
 metadata: {}
 startup_form: Main
 native_deps: {head_html: <script src="_/theme/autobahn.min.js"></script>}
-db_schema: []
+db_schema:
+- name: speedtest
+  id: 53183
+  python_name: speedtest
+  columns: {}
+  access: {python_name: speedtest, app_id: Y5TJXJVRJSOX55EH, server: full, client: none,
+    table_id: 53183}
 renamed: true
