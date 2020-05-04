@@ -8,7 +8,7 @@ connection.onopen = function (session) {
    function onResult(args) {
    	  // No idea why this doesn't work but I hate js and life is too short to spend
       // any more time on it.
-      anvil.call(this, refresh_download_speed", args[0]['download']);
+      anvil.call(this, "refresh_download_speed", args[0]['download']);
       document.getElementById('speed').innerHTML = args[0]['download'];
    }
 
