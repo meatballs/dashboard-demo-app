@@ -3,16 +3,19 @@ container:
   properties: {col_widths: '{}'}
 components:
 - type: ColumnPanel
-  properties: {role: card, col_widths: '{}'}
+  properties: {role: card, col_widths: '{"YHJWLI":15,"FDWQJB":45}'}
   name: card_1
   layout_properties: {grid_position: 'HQIBVZ,QSNHWK'}
   components:
   - type: Label
-    properties: {}
+    properties: {role: null, align: right, tooltip: '', border: '', foreground: '',
+      visible: true, text: 'Download Speed:', font_size: null, font: '', spacing_above: small,
+      icon_align: left, spacing_below: small, italic: false, background: '', bold: true,
+      underline: false, icon: ''}
     name: label_1
-    layout_properties: {grid_position: 'EAGUQJ,RDSKJU'}
+    layout_properties: {grid_position: 'YLPVMQ,YHJWLI'}
   - type: form:Subscriber
     properties: {}
     name: subscriber_1
-    layout_properties: {grid_position: 'IHZSNA,UXRQSG'}
+    layout_properties: {grid_position: 'YLPVMQ,FDWQJB'}
 is_package: true
