@@ -1,50 +1,10 @@
-services:
-- source: /runtime/services/tables.yml
-  client_config: {}
-  server_config: {auto_create_missing_columns: true}
+services: []
 package_name: Speedtest_Demo
 allow_embedding: false
 name: Speedtest Demo
 runtime_options: {version: 2, client_version: '3', server_version: python3-sandbox}
+metadata: {}
 startup_form: Main
 native_deps: {head_html: <script src="_/theme/autobahn.min.js"></script>}
-db_schema:
-- name: speedtest
-  id: 53152
-  python_name: speedtest
-  columns:
-    0DsST4eezA4=:
-      name: timestamp
-      type: string
-      admin_ui: {order: 6, width: 200}
-    D6EUVW5tbrc=:
-      name: upload
-      type: number
-      admin_ui: {order: 8, width: 200}
-    EI3_IQADjHM=:
-      name: bytes_received
-      type: number
-      admin_ui: {order: 4, width: 200}
-    QaXFcOYpLxk=:
-      name: bytes_sent
-      type: number
-      admin_ui: {order: 1, width: 200}
-    Z6ZLBXHnmzo=:
-      name: ping
-      type: number
-      admin_ui: {order: 0, width: 200}
-    ibBJ6SAqYOQ=:
-      name: client
-      type: simpleObject
-      admin_ui: {order: 3, width: 200}
-    meT1FhApsGY=:
-      name: download
-      type: number
-      admin_ui: {order: 7, width: 200}
-    ydx6m3LuaQY=:
-      name: server
-      type: simpleObject
-      admin_ui: {order: 2, width: 200}
-  access: {python_name: speedtest, app_id: Y5TJXJVRJSOX55EH, server: full, client: none,
-    table_id: 53152}
+db_schema: []
 renamed: true
