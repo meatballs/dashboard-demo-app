@@ -1,4 +1,4 @@
-var form = this.find(".content");
+var form = this.find(".anvil-container");
 
 var connection = new autobahn.Connection({
    url: 'ws://127.0.0.1:8080/ws',
@@ -8,7 +8,6 @@ var connection = new autobahn.Connection({
 connection.onopen = function (session) {
    
    function onResult(args) {
-      console.log(form)
       anvil.call(form, 'refresh_download_speed', args[0]['download']);
       document.getElementById('speed').innerHTML = args[0]['download'];
    }
