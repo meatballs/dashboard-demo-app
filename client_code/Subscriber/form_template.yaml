@@ -3,7 +3,7 @@ container:
   properties: {tooltip: '', background: '', foreground: '', border: '', visible: true,
     role: null, html: '<script src="_/theme/subscriber.js"></script>
 
-      <label id="test">Waiting...</label>'}
+      <p id="test">Waiting...</p>'}
   event_bindings: {}
 components: []
 is_package: true
