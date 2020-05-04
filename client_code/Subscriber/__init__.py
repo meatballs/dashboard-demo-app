@@ -10,5 +10,5 @@ class Subscriber(SubscriberTemplate):
     # Set Form properties and Data Bindings.
     self.init_components(**properties)
 
-    def refresh_download_speed(self, speed):
-      self.item["speed"] = speed
+  def refresh_download_speed(self, speed):
+    self.item["speed"] = speed
