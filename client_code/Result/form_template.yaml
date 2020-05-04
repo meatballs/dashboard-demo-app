@@ -11,4 +11,8 @@ components:
     properties: {}
     name: label_1
     layout_properties: {grid_position: 'EAGUQJ,RDSKJU'}
+  - type: form:Subscriber
+    properties: {}
+    name: subscriber_1
+    layout_properties: {grid_position: 'IHZSNA,UXRQSG'}
 is_package: true
