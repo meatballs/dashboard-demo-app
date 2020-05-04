@@ -7,6 +7,7 @@ connection.onopen = function (session) {
    var form = this;
 
    function onResult(args) {
+      console.log(this)
       anvil.call(form, 'refresh_download_speed', args[0]['download']);
       document.getElementById('speed').innerHTML = args[0]['download'];
    }
