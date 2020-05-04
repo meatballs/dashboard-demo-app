@@ -40,7 +40,7 @@ db_schema:
   access: {python_name: speedtest, app_id: Y5TJXJVRJSOX55EH, server: full, client: none,
     table_id: 53152}
 name: Speedtest Demo
-startup_form: Form1
+startup_form: Main
 renamed: true
 runtime_options: {version: 2, client_version: '3', server_version: python3-sandbox}
 services:
