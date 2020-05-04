@@ -2,6 +2,7 @@ container:
   type: HtmlTemplate
   properties: {tooltip: '', background: '', foreground: '', border: '', visible: true,
     role: null, html: <script src="_/theme/subscriber.js"></script>}
+  event_bindings: {show: form_show}
 components: []
 is_package: true
 custom_component: true
