@@ -1,7 +1,9 @@
 container:
   type: HtmlTemplate
   properties: {tooltip: '', background: '', foreground: '', border: '', visible: true,
-    role: null, html: <script src="_/theme/subscriber.js"></script>}
+    role: null, html: '<script src="_/theme/subscriber.js"></script>
+
+      <label id="test">Waiting...</label>'}
   event_bindings: {}
 components: []
 is_package: true

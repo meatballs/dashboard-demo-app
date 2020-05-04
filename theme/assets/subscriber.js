@@ -7,6 +7,7 @@ connection.onopen = function (session) {
 
    function onResult(args) {
       console.log("Got event:", args[0]);
+      document.getElementById('test').innerHTML = "Events:"+ args[0];
    }
 
    session.subscribe('results', onResult);
