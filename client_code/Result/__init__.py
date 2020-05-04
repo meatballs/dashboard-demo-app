@@ -7,4 +7,5 @@ import anvil.server
 
 class Result(ResultTemplate):
   def __init__(self, **properties):
+    
     self.init_components(**properties)
