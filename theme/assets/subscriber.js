@@ -1,4 +1,8 @@
-var form = this;
+var form;
+
+function set_form() {
+	form = this;
+}
 
 var connection = new autobahn.Connection({
    url: 'ws://127.0.0.1:8080/ws',
