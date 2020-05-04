@@ -10,8 +10,4 @@ class Subscriber(SubscriberTemplate):
     # Set Form properties and Data Bindings.
     self.init_components(**properties)
 
-    # Any code you write here will run when the form opens.
-
-  def form_show(self, **event_args):
-    self.call_js("hello")
 
