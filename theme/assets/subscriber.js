@@ -11,12 +11,18 @@ var connection = new autobahn.Connection({
 
 connection.onopen = function (session) {
    
-   function onResult(args) {
+   function onSpeedTestResult(args) {
    	  console.log(args[0]);
-      anvil.call(form, 'refresh_download_speed', args[0]);
+      anvil.call(form, 'raise_event', 'x-download-speed-updated', args[0]);
    }
 
-   session.subscribe('speedtest', onResult);
+   session.subscribe('speedtest', onSpeedTestResult);
+   
+   function onCpuPercent(args) {
+   	  anvil.call(form, 'raise_event', 'x-cpu-percent-updated', args[0]);
+   }
+   
+   session.subscribe('cpu_percent', onCpuPercent);
 };
 
 connection.open();
