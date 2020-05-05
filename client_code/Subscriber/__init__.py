@@ -9,7 +9,7 @@ class Subscriber(SubscriberTemplate):
     self.call_js("set_form")
     
   def raise_download_speed_event(self, download_speed, timestamp):
-    self.raise_event("x-download-speed-updated", download_speed, timestamp)
+    self.raise_event("x-download-speed-updated", download_speed=download_speed, timestamp=timestamp)
     
   def raise_cpu_percent_event(self, cpu_percent):
     self.raise_event("x-cpu-percent-updated", cpu_percent=cpu_percent)
