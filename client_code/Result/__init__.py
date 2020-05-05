@@ -11,6 +11,5 @@ class Result(ResultTemplate):
   def refresh_download_speed(self, **event_args):
     self.item["download_speed"] = download
     
-  def refresh_cpu_percent(self, **event_args):
-    print(event_args)
+  def refresh_cpu_percent(self, cpu_percent, **event_args):
     self.item["cpu_percent"] = cpu_percent
