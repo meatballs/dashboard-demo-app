@@ -1,8 +1,8 @@
-from ._anvil_designer import ResultTemplate
+from ._anvil_designer import DashboardTemplate
 from anvil import *
 import anvil.server
 
-class Result(ResultTemplate):
+class Dashboard(DashboardTemplate):
   def __init__(self, **properties):
     self.subscriber.set_event_handler("x-download-speed-updated", self.refresh_download_speed)
     self.subscriber.set_event_handler("x-cpu-percent-updated", self.refresh_cpu_percent)
