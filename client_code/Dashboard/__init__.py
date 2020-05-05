@@ -6,7 +6,7 @@ class Dashboard(DashboardTemplate):
   def __init__(self, **properties):
     self.subscriber.set_event_handler("x-download-speed-updated", self.refresh_download_speed)
     self.subscriber.set_event_handler("x-cpu-percent-updated", self.refresh_cpu_percent)
-    self.cpu_percent_plot.
+    self.cpu_percent_plot.layout.xaxis.
     self.init_components(**properties)
 
   def refresh_download_speed(self, download_speed, timestamp, **event_args):
