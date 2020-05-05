@@ -19,16 +19,17 @@ logger = txaio.make_logger()
 
 @monitor.on_join
 async def run_speedtest(session, details):
-    s = Speedtest()
-    s.get_best_server()
-    loop = asyncio.get_event_loop()
     # Not sure why we need this but the first published result never gets picked
     # up by the subscriber.
     session.publish("speedtest")
     while True:
+        s = Speedtest()
         logger.info("Starting speedtest...")
+        loop = asyncio.get_event_loop()
+        await loop.run_in_executor(None, s.get_best_server)
         await loop.run_in_executor(None, s.download)
         result = {key: s.results.dict()[key] for key in ["download", "timestamp"]}
+        logger.info(f"Speedtest completed: {result['download'] / 10 ** 6:.2f} Mbps")
         session.publish("speedtest", result)
         await asyncio.sleep(60)
 
