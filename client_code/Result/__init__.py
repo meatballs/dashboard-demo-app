@@ -10,7 +10,6 @@ class Result(ResultTemplate):
 
   def refresh_download_speed(self, download_speed, timestamp, **event_args):
     self.item["download_speed"] = download_speed
-    self.refresh_data_bindings()
     
   def refresh_cpu_percent(self, cpu_percent, **event_args):
     self.item["cpu_percent"] = cpu_percent
