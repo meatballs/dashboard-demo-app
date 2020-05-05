@@ -20,6 +20,6 @@ class Dashboard(DashboardTemplate):
       go.Bar(
         x=[cpu_percent],
         y=["cpu"],
-        orientation="h"
+        orientation="h",
       )
     ]
