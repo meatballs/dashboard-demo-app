@@ -4,5 +4,5 @@ from ..Dashboard import Dashboard
 
 class Main(MainTemplate):
   def __init__(self, **properties):
-    self.add_component(Result())
+    self.add_component(Dashboard())
     self.init_components(**properties)
