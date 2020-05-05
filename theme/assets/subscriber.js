@@ -12,7 +12,6 @@ var connection = new autobahn.Connection({
 connection.onopen = function (session) {
    
    function onSpeedTestResult(args) {
-   	  console.log(args[0]);
       anvil.call(form, 'raise_event', 'x-download-speed-updated', args[0]['download'], args[0]['timestamp']);
    }
 
