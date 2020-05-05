@@ -45,7 +45,7 @@ To start the bot, open a new terminal session, navigate to the root folder of th
 project and:
 
 ```
-python bot.py
+python bot/bot.py
 ```
 
 And, finally, to start the Anvil app, open a new terminal session, navigate to the root
