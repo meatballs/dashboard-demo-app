@@ -10,6 +10,7 @@ class Dashboard(DashboardTemplate):
   def refresh_download_speed(self, download_speed, timestamp, **event_args):
     display_speed = download_speed / 10 ** 6
     self.download_speed_label.text = f"{display_speed:.1f} Mbps"
+    self.timestamp_label.text = f"at {timestamp}"
     
   def refresh_cpu_percent(self, cpu_percent, **event_args):
     self.cpu_percent_label.text = f"{cpu_percent} %"
