@@ -34,7 +34,7 @@ components:
     name: timestamp_label
     layout_properties: {grid_position: 'YLPVMQ,XRDVYK'}
 - type: ColumnPanel
-  properties: {role: card, col_widths: '{"LMVDCT":13,"WJKIGL":47}'}
+  properties: {role: card, col_widths: '{"LMVDCT":9,"WJKIGL":51}'}
   name: card_2
   layout_properties: {grid_position: 'HDWRVT,ITMGTB'}
   components:
