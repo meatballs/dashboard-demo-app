@@ -56,5 +56,11 @@ anvil-app-server
 ```
 
 You should now be able to navigate to http://localhost:3030 in your browser and see the
-demo app running. It may take a minute or two for the first broadband speed test result
+demo app running. 
+
+You'll be asked to set the url to your crossbar router. If you installed it on your local
+machine, the default url will be correct. If you're using a router somewhere other than
+where your browser is running, you'll need to enter its url.
+
+It may take a minute or two for the first broadband speed test result
 to appear but there is no need to refresh the browser.
