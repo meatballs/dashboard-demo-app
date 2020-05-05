@@ -7,5 +7,5 @@ class Result(ResultTemplate):
     self.subscriber.set_event_handler("x-download-speed-updated", self.refresh_download_speed)
     self.init_components(**properties)
 
-  def refresh_download_speed(self, download, **event_args):
+  def refresh_download_speed(self, download, timestamp, **event_args):
     self.item["download_speed"] = download
