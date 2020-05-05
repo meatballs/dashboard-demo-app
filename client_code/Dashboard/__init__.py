@@ -8,6 +8,8 @@ class Dashboard(DashboardTemplate):
     self.subscriber.set_event_handler("x-cpu-percent-updated", self.refresh_cpu_percent)
     self.cpu_percent_plot.layout.xaxis.range = [0, 100]
     self.cpu_percent_plot.layout.width
+    self.cpu_percent_plot.visible = False
+    self.cpu_percent_plot.interactive = False
     self.init_components(**properties)
 
   def refresh_download_speed(self, download_speed, timestamp, **event_args):
@@ -24,3 +26,4 @@ class Dashboard(DashboardTemplate):
         orientation="h",
       )
     ]
+    self.cpu_percent_plot.visible = True
