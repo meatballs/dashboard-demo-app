@@ -7,12 +7,12 @@ components:
   name: subscriber
   layout_properties: {grid_position: 'WNAIDT,QVPHZL'}
 - type: ColumnPanel
-  properties: {role: card, col_widths: '{"YHJWLI":10,"TMPVUA":37}'}
+  properties: {role: card, col_widths: '{"YHJWLI":10,"TMPVUA":39}'}
   name: card_1
   layout_properties: {grid_position: 'HQIBVZ,QSNHWK'}
   components:
   - type: Label
-    properties: {role: null, align: right, tooltip: '', border: '', foreground: '',
+    properties: {role: null, align: left, tooltip: '', border: '', foreground: '',
       visible: true, text: 'Download Speed:', font_size: null, font: '', spacing_above: small,
       icon_align: left, spacing_below: small, italic: false, background: '', bold: true,
       underline: false, icon: ''}
@@ -32,14 +32,14 @@ components:
       spacing_below: small, italic: false, background: '', bold: false, underline: false,
       icon: ''}
     name: timestamp_label
-    layout_properties: {grid_position: 'YLPVMQ,XRDVYK'}
+    layout_properties: {grid_position: 'CZABYW,HSWUPZ'}
 - type: ColumnPanel
-  properties: {role: card, col_widths: '{"LMVDCT":9,"WJKIGL":51}'}
+  properties: {role: card, col_widths: '{"LMVDCT":13,"WJKIGL":47}'}
   name: card_2
   layout_properties: {grid_position: 'HDWRVT,ITMGTB'}
   components:
   - type: Label
-    properties: {role: null, align: right, tooltip: '', border: '', foreground: '',
+    properties: {role: null, align: left, tooltip: '', border: '', foreground: '',
       visible: true, text: 'CPU Load:', font_size: null, font: '', spacing_above: small,
       icon_align: left, spacing_below: small, italic: false, background: '', bold: true,
       underline: false, icon: ''}
