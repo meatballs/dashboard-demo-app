@@ -3,12 +3,12 @@
 This repository demonstrates the use of an [Anvil](https://anvil.works) app as a front
 end to a set of bots which communicate via a [crossbar](https://crossbar.io) router.
 
-In this demo, bot the anvil app and the bot run on the same machine but, as long as all
+In this demo, both the Anvil app and the bot run on the same machine but, as long as all
 have access to the same crossbar router, they can be spread over as many machines as
 desired.
 
 The bots can be used to perform background tasks asynchronously and publish results via
-the router. The anvil app subscribes to the router and displays those results in real
+the router. The Anvil app subscribes to the router and displays those results in real
 time as they are received.
 
 In this demo, there is a single bot which will:
@@ -45,7 +45,7 @@ To start the bot, open a new terminal session, navigate to the root folder of th
 project and:
 
 ```
-python bot.py
+python bot/bot.py
 ```
 
 And, finally, to start the Anvil app, open a new terminal session, navigate to the root
