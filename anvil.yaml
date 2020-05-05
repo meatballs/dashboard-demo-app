@@ -1,7 +1,7 @@
 services: []
-package_name: Speedtest_Demo
+package_name: Dashboard_Demo
 allow_embedding: false
-name: Speedtest Demo
+name: Dashboard Demo
 runtime_options: {version: 2, client_version: '3', server_version: python3-sandbox}
 metadata: {}
 startup_form: Main
