@@ -7,13 +7,13 @@ components:
   name: subscriber
   layout_properties: {grid_position: 'WNAIDT,QVPHZL'}
 - type: ColumnPanel
-  properties: {role: card, col_widths: '{"YHJWLI":15}'}
+  properties: {role: card, col_widths: '{"YHJWLI":10,"TMPVUA":37}'}
   name: card_1
   layout_properties: {grid_position: 'HQIBVZ,QSNHWK'}
   components:
   - type: Label
-    properties: {role: null, align: left, tooltip: '', border: '', foreground: '',
-      visible: true, text: 'Latest Download Speed:', font_size: null, font: '', spacing_above: small,
+    properties: {role: null, align: right, tooltip: '', border: '', foreground: '',
+      visible: true, text: 'Download Speed:', font_size: null, font: '', spacing_above: small,
       icon_align: left, spacing_below: small, italic: false, background: '', bold: true,
       underline: false, icon: ''}
     name: label_1
@@ -24,4 +24,22 @@ components:
     layout_properties: {grid_position: 'YLPVMQ,TMPVUA'}
     data_bindings:
     - {property: text, code: 'self.item[''download_speed'']'}
+- type: ColumnPanel
+  properties: {role: card, col_widths: '{"LMVDCT":13,"WJKIGL":47}'}
+  name: card_2
+  layout_properties: {grid_position: 'HDWRVT,LQPKPT'}
+  components:
+  - type: Label
+    properties: {role: null, align: right, tooltip: '', border: '', foreground: '',
+      visible: true, text: 'CPU Percent:', font_size: null, font: '', spacing_above: small,
+      icon_align: left, spacing_below: small, italic: false, background: '', bold: true,
+      underline: false, icon: ''}
+    name: label_2
+    layout_properties: {grid_position: 'WKUXDI,LMVDCT'}
+  - type: Label
+    properties: {}
+    name: cpu_percent_label
+    layout_properties: {grid_position: 'WKUXDI,WJKIGL'}
+    data_bindings:
+    - {property: text, code: 'self.item[''cpu_percent'']'}
 is_package: true
