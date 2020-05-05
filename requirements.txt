@@ -1,0 +1,5 @@
+autobahn
+cbor
+psutil
+speedtest-cli
+txaio
