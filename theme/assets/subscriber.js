@@ -13,13 +13,13 @@ connection.onopen = function (session) {
    
    function onSpeedTestResult(args) {
    	  console.log(args[0]);
-      anvil.call(form, 'raise_event', 'x-download-speed-updated', args[0]);
+      anvil.call(form, 'raise_event', 'x-download-speed-updated', download=args[0]['download'], timestamp=args[0]['timestamp']);
    }
 
    session.subscribe('speedtest', onSpeedTestResult);
    
    function onCpuPercent(args) {
-   	  anvil.call(form, 'raise_event', 'x-cpu-percent-updated', args[0]);
+   	  anvil.call(form, 'raise_event', 'x-cpu-percent-updated', cpu_percent=args[0]);
    }
    
    session.subscribe('cpu_percent', onCpuPercent);
