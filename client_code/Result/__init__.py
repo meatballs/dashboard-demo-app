@@ -8,4 +8,5 @@ class Result(ResultTemplate):
     self.init_components(**properties)
 
   def refresh_download_speed(self, **event_args):
+    print(event_args)
     self.item["download_speed"] = event_args["download"]
