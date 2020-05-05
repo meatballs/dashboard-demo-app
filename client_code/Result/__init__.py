@@ -14,5 +14,5 @@ class Result(ResultTemplate):
     self.refresh_data_bindings()
     
   def refresh_cpu_percent(self, cpu_percent, **event_args):
-    self.item["cpu_percent"] = cpu_percent
+    self.item["cpu_percent"] = f"{cpu_percent} %"
     self.refresh_data_bindings()

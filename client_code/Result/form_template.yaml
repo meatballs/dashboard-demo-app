@@ -34,7 +34,7 @@ components:
   components:
   - type: Label
     properties: {role: null, align: right, tooltip: '', border: '', foreground: '',
-      visible: true, text: 'CPU Percent:', font_size: null, font: '', spacing_above: small,
+      visible: true, text: 'CPU Load:', font_size: null, font: '', spacing_above: small,
       icon_align: left, spacing_below: small, italic: false, background: '', bold: true,
       underline: false, icon: ''}
     name: label_2
