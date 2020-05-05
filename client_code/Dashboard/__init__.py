@@ -16,3 +16,8 @@ class Dashboard(DashboardTemplate):
     
   def refresh_cpu_percent(self, cpu_percent, **event_args):
     self.cpu_percent_label.text = f"{cpu_percent} %"
+    self.cpu_percent_plot.data = [
+      go.Bar(
+        x = 
+      )
+    ]
