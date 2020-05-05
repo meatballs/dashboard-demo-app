@@ -1,11 +1,16 @@
 var form;
+var router_url;
 
 function set_form() {
 	form = this;
-}
+};
+
+function set_router_url(url) {
+    router_url = url;
+};
 
 var connection = new autobahn.Connection({
-   url: 'ws://127.0.0.1:8080/ws',
+   url: router_url,
    realm: 'dashboard'}
 );
 
