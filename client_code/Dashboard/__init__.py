@@ -19,6 +19,7 @@ class Dashboard(DashboardTemplate):
     self.cpu_percent_plot.data = [
       go.Bar(
         x=[0, 25, 50, 75, 100],
-        y=cpu_percent
+        y=cpu_percent,
+        orientation="h"
       )
     ]
