@@ -6,7 +6,7 @@ function set_form() {
 
 var connection = new autobahn.Connection({
    url: 'ws://127.0.0.1:8080/ws',
-   realm: 'speedtest'}
+   realm: 'dashboard'}
 );
 
 connection.onopen = function (session) {
@@ -15,7 +15,7 @@ connection.onopen = function (session) {
       anvil.call(form, 'refresh_download_speed', args[0]);
    }
 
-   session.subscribe('results', onResult);
+   session.subscribe('speedtest', onResult);
 };
 
 connection.open();
