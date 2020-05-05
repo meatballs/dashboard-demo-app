@@ -1,5 +1,6 @@
 from ._anvil_designer import DashboardTemplate
 from anvil import *
+import plotly.graph_objects as go
 
 class Dashboard(DashboardTemplate):
   def __init__(self, **properties):

@@ -53,4 +53,8 @@ components:
     name: cpu_percent_label
     layout_properties: {grid_position: 'WKUXDI,WJKIGL'}
     data_bindings: []
+  - type: Plot
+    properties: {height: 34}
+    name: cpu_percent_plot
+    layout_properties: {grid_position: 'NPCLUL,WMGBQY'}
 is_package: true
