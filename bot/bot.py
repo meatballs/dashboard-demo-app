@@ -22,6 +22,9 @@ async def run_speedtest(session, details):
     s = Speedtest()
     s.get_best_server()
     loop = asyncio.get_event_loop()
+    # Not sure why we need this but the first published result never gets picked
+    # up by the subscriber.
+    session.publish("speedtest")
     while True:
         logger.info("Starting speedtest...")
         await loop.run_in_executor(None, s.download)
