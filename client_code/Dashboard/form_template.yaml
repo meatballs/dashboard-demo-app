@@ -26,6 +26,10 @@ components:
     name: download_speed_label
     layout_properties: {grid_position: 'YLPVMQ,TMPVUA'}
     data_bindings: []
+  - type: Label
+    properties: {}
+    name: label_3
+    layout_properties: {grid_position: 'YLPVMQ,XRDVYK'}
 - type: ColumnPanel
   properties: {role: card, col_widths: '{"LMVDCT":13,"WJKIGL":47}'}
   name: card_2
