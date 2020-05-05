@@ -8,8 +8,8 @@ class Result(ResultTemplate):
     self.subscriber.set_event_handler("x-cpu-percent-updated", self.refresh_cpu_percent)
     self.init_components(**properties)
 
-  def refresh_download_speed(self, **event_args):
-    self.item["download_speed"] = download
+  def refresh_download_speed(self, download_speed, timestamp, **event_args):
+    self.item["download_speed"] = download_speed
     self.refresh_data_bindings()
     
   def refresh_cpu_percent(self, cpu_percent, **event_args):
