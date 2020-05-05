@@ -12,4 +12,4 @@ class Subscriber(SubscriberTemplate):
     self.raise_event("x-download-speed-updated", download_speed, timestamp)
     
   def raise_cpu_percent_event(self, cpu_percent):
-    self.raise_event("x-cpu-percent-updated", cpu_percent)
+    self.raise_event("x-cpu-percent-updated", cpu_percent=cpu_percent)
