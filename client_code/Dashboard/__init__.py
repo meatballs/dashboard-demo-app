@@ -21,5 +21,6 @@ class Dashboard(DashboardTemplate):
         x=[cpu_percent],
         y=["cpu"],
         orientation="h",
+        
       )
     ]
