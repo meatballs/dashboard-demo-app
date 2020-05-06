@@ -1,3 +1,4 @@
+anvil-app-server
 autobahn
 cbor
 psutil
